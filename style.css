@@ -1,0 +1,409 @@
+@import url('https://fonts.googleapis.com/css2?family=Titan+One&display=swap');
+
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css");
+
+html {
+ font-size: 6.25%;
+
+}
+
+
+/*.      pre lode */
+
+
+
+#preloder{
+  width: 100%;
+ height: 100vh;
+ background: #000000;
+ z-index: 99999;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+}
+.dot {
+ margin: 15px;
+ height: 60px;
+ width: 60px;
+ background: #fff;
+ border-radius: 50px;
+ display: inline-block;
+ animation: wep 1.20s linear infinite;
+ transition: 1s;
+ border: solid 1px #000;
+ box-shadow: 0 0 40px #fff;
+}
+
+.dot1 {
+ animation-delay: .20s;
+}
+
+.dot2 {
+ animation-delay: .40s;
+}
+
+.dot3 {
+ animation-delay: .60s;
+ }
+@keyframes wep {
+ 0% {
+  transform: translateY(0);
+ }
+
+ 30% {
+  transform: translateY(-30px);
+ }
+
+ 50% {
+  transform: translateY(0);
+ }
+
+ 70% {
+  transform: translateY(30px);
+ }
+}
+  .center {
+   position: absolute;
+   top: 0;
+   bottom: 0;
+   left: 0;
+   right: 0;
+   margin: auto;
+  }
+ 
+
+/*.            start body.     */
+
+body {
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ padding: 0;
+ margin: 0;
+ background: linear-gradient(45deg, #267FEDCC, #9026EDCC);
+}
+
+
+
+
+.maincontenforbody {
+ display: grid;
+ place-items: center;
+
+
+}
+
+.maincontenforimgandwelcom {
+ position: relative;
+ width: 100%;
+
+}
+
+.maincontenforimgandwelcom .overimg {
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ margin: auto;
+ /* border: solid .2rem #000; */
+ border-radius: 2.5rem;
+ width: 90%;
+ margin-top: 2.5rem;
+ transition: .5s;
+}
+
+.maincontenforimgandwelcom .overimg img {
+ border-radius: 2.5rem;
+ border: solid .5rem #000;
+ animation: proj 1.5s linear forwards;
+}
+
+#i0 {
+ width: 100%;
+}
+
+.maincontenforimgandwelcom .overimg .inimg #i1 {
+ position: absolute;
+ top: 90%;
+ left: 50%;
+ transform: translate(-50%, -50%);
+ width: 26.0rem;
+ height: 26.0rem;
+ border-radius: 50%;
+ border: solid .5rem #000;
+ transition: .5s;
+}
+
+.maincontenforimgandwelcom .overimg .inimg #i1:hover,
+.maincontenforimgandwelcom .overimg:hover {
+ box-shadow: 0 0 3.0rem #000;
+}
+
+#welcome1 {
+ font-size: 5.0rem;
+ font-family: 'Titan One', cursive;
+ font-weight: 10.0rem;
+ color: #fff;
+ margin-top: 5rem;
+}
+
+#welcome1::selection {
+ color: #fff;
+ background: #C136FC;
+}
+
+#b1 {
+ color: #FCE336;
+
+}
+
+#b1::selection {
+ color: #C136FC;
+ background: #fff;
+ border-radius: 5.0rem;
+}
+
+#hed21 {
+ color: #fff;
+ font-family: 'Titan One', cursive;
+ font-weight: 100%;
+}
+
+#hed21::selection {
+ color: #fff;
+ background: #C136FC;
+}
+
+/* dyyodo6r6oeydldod6f6ofdydo6dydy */
+
+
+.project {
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ width: 90%;
+ border: dashed .3rem #000;
+ border-radius: 2.5rem;
+ height: 40.0rem;
+ margin: 2.0rem;
+ color: #fff;
+ font-family: 'Titan One', cursive;
+ background: linear-gradient(-45deg, #9026EDCC, #267FEDCC);
+ transition: .5s;
+
+}
+
+.project:hover {
+ /* animation: proj 1.5s linear forwards; */
+ transition: 1s;
+ box-shadow: 0 0 5.0rem #000;
+ 
+
+}
+.project:hover #ancer{
+ color: #75CEFF;
+ border: #75CEFF;
+}
+/*
+@keyframes proj {
+ 0% {
+  border-top: solid;
+ }
+
+ 25% {
+  border-top: solid;
+  border-right: solid;
+ }
+
+ 50% {
+  border-top: solid;
+  border-right: solid;
+  border-bottom: solid;
+ }
+
+ 75% {
+  border-top: solid;
+  border-right: solid;
+  border-bottom: solid;
+  border-left: solid;
+ }
+ 100%{
+  border: dashed;
+ }
+}
+*/
+.hed2 h2 {
+ font-size: 3.0rem;
+ color: #FCE336;
+ border-bottom: solid .2rem #FCE336;
+ padding: .5rem;
+ width: 30.0rem;
+}
+
+.hed2 p {
+ border-bottom: solid .2rem #Fff;
+ padding: .5rem;
+ font-size: 2rem;
+}
+
+.videos video {
+ width: 36.0rem;
+ height: 26.0rem;
+ margin: 2.0rem;
+ border-radius: 2.5rem;
+ transition: .5s;
+}
+
+.videos video:hover {
+ margin: 0;
+}
+
+a {
+ text-decoration: none;
+ color: #fff;
+ border-bottom: solid .2rem #fff;
+ padding: .5rem;
+ transition: .4s;
+}
+
+
+
+
+/*conect us.*/
+
+.conec {
+ width: 90%;
+ height: 30.0rem;
+ border: dashed .2rem #000;
+ border-radius: 2.5rem;
+ display: grid;
+ place-items: center;
+ transition: .5s;
+ background: linear-gradient(-45deg, #9026EDCC, #267FEDCC);
+}
+
+.conec:hover {
+ box-shadow: 0 0 3.0rem #000;
+}
+
+.conec b {
+ font-size: 4.0rem;
+}
+
+.Googlechat {
+ font-size: 2.5rem;
+}
+
+.mainconforconectus {
+ display: grid;
+ place-items: center;
+ height: 10.0rem;
+}
+
+.iconsss {
+ display: flex;
+ width: 50%;
+ height: 50%;
+ margin: 5%;
+ padding: 0;
+}
+
+.iconsss i {
+ margin: 1.7rem;
+ font-size: 3.0rem;
+ transition: .6s;
+ border-radius: 50%;
+ color: #fff;
+}
+
+.iconsss i:hover {
+ color: #FCE336;
+  box-shadow: 0 0 2.0rem #000;
+
+}
+
+#gggb {
+ color: #fff;
+ font-family: 'Titan One', cursive;
+}
+
+#eeeb {
+ color: #FCE336;
+ font-size: none;
+ font-family: 'Titan One', cursive;
+}
+
+
+/*############ my hacking story ###############*/
+
+.maincon {
+ width: 100%;
+ position: relative;
+ display: grid;
+ place-items: center;
+ transition: .5s;
+}
+
+.maincon:hover .textposa {
+ box-shadow: 0 0 3.0rem #000;
+ /* animation: proj 1.5s linear forwards; */
+}
+
+.imgessssforbg {
+ width: 90%;
+ height: 35.0rem;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ border-radius: 2.5rem;
+ overflow: hidden;
+ border: .3rem dashed #000;
+
+}
+
+.imgessssforbg img {
+ width: 100%;
+ height: 35.0rem;
+}
+
+.textposa {
+ position: absolute;
+ top: 50%;
+ left: 50%;
+ transform: translate(-50%, -50%);
+ width: 90%;
+ height: 35.0rem;
+ text-align: center;
+ color: #fff;
+ display: grid;
+ place-items: center;
+ background: linear-gradient(-45deg, #9026EDCC, #267FEDCC);
+ border-radius: 2.5rem;
+ overflow: hidden;
+ border: .3rem dashed #000000;
+ transition: .5s;
+
+}
+
+.textposa p {
+ font-size: 2.5rem;
+ margin: 3.5rem;
+ margin-bottom: 1.0rem;
+}
+
+.textposa h1 {
+ font-size: 5.5rem;
+ margin-top: 5.0rem;
+}
+
+/* for decstop */
+@media(max-width: 10000px) {
+ html {
+  font-size: 70%;
+ }
+}
+/* for phone */
+@media(max-width: 768px) {
+ html {
+  font-size: 50%;
+ }
+}

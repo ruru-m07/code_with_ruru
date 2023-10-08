@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+
+ <title>HTML</title>
+ <style>
+ html{
+  font-size: 6.25%;
+ }
+  body {
+ background: #222;
+ position: absolute;
+ top: 50%;
+ left: 50%;
+ transform: translate(-50%, -50%);
+ margin: 0;
+ padding: 0;
+}
+
+.card {
+ position: absolute;
+ top: -99%;
+ left: 50%;
+ transform: translate(-50%, -50%);
+ width: 10.4rem;
+ height: 10.4rem;
+ border-radius: 50%;
+ border: solid .2rem #84D1FC;
+ transition: 1s;
+ box-shadow: 0 0 7.0rem #84D1FC;
+ text-align: center;
+ overflow: hidden;
+ /*
+ visibility: hidden;*/
+ padding: 1.5rem;
+ animation: anim 9s linear infinite;
+ filter: blur(10.0rem);
+ margin: 0;
+}
+
+
+.card:hover {
+ width: 60.0rem;
+ height: 60.0rem;
+ border-radius: 2.0rem;
+ visibility: visible;
+}
+
+.carddd {
+ position: absolute;
+ top: -99%;
+ left: 50%;
+ transform: translate(-50%, -50%);
+ width: 60.0rem;
+ height: 60.0rem;
+ border-radius: 2.0rem;
+ border: solid .2rem #84D1FC;
+ transition: 1s;
+ box-shadow: 0 0 7.0rem #84D1FC;
+ text-align: center;
+ overflow: hidden;
+ /*
+ visibility: hidden;*/
+ padding: 1.5rem;
+ animation: anim 9s linear infinite;
+}
+
+h1,
+b,
+h3{
+ background: linear-gradient(45deg, #84D1FC, #84D1FC);
+ -webkit-text-fill-color: transparent;
+ -webkit-background-clip: text;
+}
+h1{
+ font-size: 3rem;
+}
+i {
+ color: #84D1FC;
+ font-size: 2.5rem;
+ border-bottom: .1rem solid #84D1FC;
+ padding: .5rem;
+ margin: .5rem;
+}
+
+
+/* --------------------------------------- */
+
+@keyframes anim {
+ 0% {
+  filter: hue-rotate(0deg);
+ }
+ 100% {
+  filter: hue-rotate(360deg);
+ }
+}
+
+p {
+ color: #fff;
+ font-size: 3.0rem;
+ margin: .4rem;
+ padding: .4rem;
+}
+@media(max-width: 998px) {
+ html {
+  font-size: 70%;
+ }
+}
+
+@media(max-width: 768px) {
+ html {
+  font-size: 25%;
+ }
+}
+
+/* ++++++±+++++++++++++++++++++++++++++++++++++++++ */
+
+ </style>
+
+ <!-- HTML -->
+
+
+ <!-- Custom Styles -->
+</head>
+
+<body>
+ <!------------------------------------------->
+  <div class="carddd"></div>
+
+ <!------------------------------------------->
+
+ <div class="card">
+  <h1>hello friends <br>
+  </h1>
+  <br>
+  <br>
+  <br>
+  <br>
+  <p>
+   <b>welcome to rock studio femily page.</b> <br>
+   <br> 
+   <b>this is my project page.</b><br>
+   <br> 
+   <b> My name is rutvik Movaliya.</b><br>
+   <br>
+   <b>i hope you enjoy my page.</b> <br>
+    <br><br> <hr>
+  <h3>contact us</h3>
+  <b>email ID: </b><i>rutvikm205@gmail.com</i>
+  </p>
+ </div>
+
+ <!--+++++++++++++++++++++++++++++++++++++++++++++++++-->
+
+ <!-- Project -->
+ <script src="main.js"></script>
+</body>
+
+</html>

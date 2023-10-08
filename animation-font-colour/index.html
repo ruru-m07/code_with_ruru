@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+
+ <title>HTML</title>
+
+ <!-- HTML -->
+
+
+ <!-- Custom Styles -->
+ <style>
+  html{
+ font-size: 6.25%;
+}
+body {
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ height: 100vh;
+ background: #222;
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+}
+
+.card{
+ margin: .6rem;
+ padding: .6rem;
+ display: flex;
+ height: 20.0rem;
+ width: 20.0rem;
+ font-size: 2.5rem;
+ font-weight: 600;
+ align-items: center;
+ justify-content: center;
+ text-align: center;
+ animation: anim 5s linear infinite;
+ color: #3c8FFF;
+ border-radius: 6.0rem;
+ transition: 1s;
+ border: .4rem solid #3c8FFF;
+ overflow: auto;
+ /* box-shadow: 0 0 1.0rem #3c8FFF; */
+}
+
+.card:hover {
+ border-radius: 1.5rem;
+ font-size: 3.5rem;
+ height: 60.0rem;
+}
+
+main{
+ display: flex;
+ margin: 1.0rem;
+}
+/* --------------------------------------- */
+@keyframes anim {
+ 0% {
+  filter: hue-rotate(0deg);
+ }
+ 
+ 25% {
+  filter: hue-rotate(90deg);
+ }
+
+ 50% {
+  filter: hue-rotate(180deg);
+ }
+ 
+ 75% {
+  filter: hue-rotate(270deg);
+ }
+
+ 100% {
+  filter: hue-rotate(360deg);
+ }
+}
+@media(max-width: 998px) {
+ html {
+  font-size: 70%;
+ }
+}
+
+@media(max-width: 768px) {
+ html {
+  font-size: 25%;
+ }
+}
+
+ </style>
+</head>
+
+<body>
+ 
+ <div class="card">project 1 </div>
+
+ 
+ <div class="card">project 2</div>
+ <div class="card">project 3</div>
+ 
+ 
+
+ <!-- Project -->
+ <script src="main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+
+ <title>hover button</title>
+
+ <!-- HTML -->
+
+
+ <!-- Custom Styles -->
+ <style>
+  .disclaimer{ display: none;}
+body {
+ justify-content: center;
+ align-items: center;
+ display: flex;
+ height: 100vh;
+ background: #fff;
+}
+
+.mainbutton {
+ width: 200px;
+ height: 80px;
+ /* background: #000; */
+ border: solid 2px #000;
+ border-radius: 10px;
+ justify-content: center;
+ align-items: center;
+ display: flex;
+ color: #000;
+ font-size: 25px;
+ position: relative;
+ /* box-shadow: 0 0 30px #000; */
+}
+
+.top {
+ width: 20px;
+ height: 15px;
+ position: absolute;
+ top: 0;
+ left: 90%;
+ transform: translate(-50%, -50%);
+ border: solid 2px #000;
+ background: #fff;
+ transition: .7s;
+ 
+   border-radius: 10px;
+
+ /* box-shadow: 0 0 10px #000; */
+}
+
+.mainbutton:hover .top {
+ left: 10%;
+
+}
+
+
+.bottom {
+ width: 20px;
+ height: 15px;
+ position: absolute;
+ top: 100%;
+ left: 10%;
+ transform: translate(-50%, -50%);
+ border: solid 2px #000;
+ background: #fff;
+ transition: .7s;
+ border-radius: 10px;
+ /* box-shadow: 0 0 10px #000; */
+
+}
+
+.mainbutton:hover .bottom {
+ left: 90%;
+}
+
+
+
+p::selection{
+ background: #B2E9FD;
+ color: #EA81D3;
+}
+
+ </style>
+</head>
+
+<body>
+ <div class="mainbutton">
+  <div class="top"></div>
+  <p>hover me</p>
+  <div class="bottom"></div>
+ </div>
+
+
+ <script src="main.js"></script>
+</body>
+
+</html>

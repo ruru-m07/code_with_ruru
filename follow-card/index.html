@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+
+ <title>followers card</title>
+</head>
+<style>
+html{
+   font-size: 6.25%;
+}
+ body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  background: #3D77F9;
+ }
+
+ .mainccc {
+  display: grid;
+ }
+
+ .upmaincard {
+  height: 35.0rem;
+  width: 35.0rem;
+  /* border: solid 2rem blue; */
+  border-top-left-radius: 2.5rem;
+  border-top-right-radius: 2.5rem;
+  border-bottom-left-radius: 2.5rem;
+  background: linear-gradient(-45deg, #F372BF, #8E56FD);
+  /* display: flex; */
+  transition: .5s;
+  overflow: hidden;
+ }
+
+ .upmaincard:hover {
+  height: 60.0rem;
+ }
+
+ img {
+  width: 28.0rem;
+  height: 28.0rem;
+  border-radius: 2.5rem;
+  border: solid .1rem #BB59EF;
+  margin: 3.5rem;
+ }
+
+ .douncard {
+  width: 35.0rem;
+  height: 10.0rem;
+  /* border: solid 2rem #DF1FFF; */
+  background: #F372BF;
+ }
+
+ .douncard::before {
+  width: 35.0rem;
+  height: 10.0rem;
+  content: '';
+  background: #3D77F9;
+  position: absolute;
+  border-top-right-radius: 2.5rem;
+ }
+
+ .pff {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 5.0rem;
+ }
+
+ .fff {
+  display: grid;
+  margin: 2.0rem;
+  width: 7.5rem;
+  font-size: 1.5rem;
+  /* border: solid 2rem red; */
+ }
+
+ .butttt {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 3.0rem;
+ }
+
+ button {
+  width: 9.0rem;
+  height: 3.0rem;
+  margin: 2.0rem;
+  border-radius: .5rem;
+  border: solid .2rem #000;
+  background: transparent;
+  border: solid .2rem #000;
+  transition: .5s;
+ }
+
+ button:hover {
+  background: #000;
+  border: solid .2rem #000;
+  color: #fff;
+ }
+ h1{
+  font-size: 2.5rem;
+ }
+
+ h1::selection {
+  /* background: #000; */
+  color: #F372BF;
+ }
+
+@media(max-width: 998px) {
+ html{
+  font-size: 55%;
+ }
+}
+@media(max-width: 768px) {
+ html{
+  font-size: 45%;
+ }
+}
+
+</style>
+<body>
+ <div class="mainccc">
+  <div class="upmaincard">
+   <center>
+    <img src="1 followers card.jpg">
+    <h1>Rutvik Movaliya</h1>
+    <br><br>
+    <div class="pff">
+     <div class="fff">post<p>14</p>
+     </div>
+     <div class="fff">followers <p>48</p>
+     </div>
+     <div class="fff">following <p>51</p>
+     </div>
+    </div>
+   </center>
+   <br><br>
+   <div class="butttt">
+    <button id="btn1">follow</button>
+    <button id="btn2">massage</button>
+   </div>
+  </div>
+  <div class="douncard">
+  </div>
+ </div>
+ <!-- Project -->
+ <script src="main.js"></script>
+</body>
+
+</html>
